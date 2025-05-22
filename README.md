@@ -1,1 +1,0 @@
-# smartolt-backend-for-railway
