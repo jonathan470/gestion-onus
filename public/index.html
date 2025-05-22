@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scrip.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>DESHABILITACION ONUS</title>
+</head>
+<body>
+    <div id="alert-container"></div>
+    <section>
+        <div class="card">
+            <div class="logo">
+                <img src="assets/cablecauca-logo.jpg" alt="logo" class="logo" id="logoPreview">
+            </div>
+
+            <div class="description-container">
+                <h2>
+                    Ingrese los IDs de las onu (maximo 10)
+                </h2>
+            </div>
+            <div class="input-container">
+                <textarea name="ids" id="id-input" placeholder="Escribe aqui los id"></textarea>
+            </div>
+            <div class="bottom-container">
+                <button id="disable-onu">Deshabilitar</button>
+                <button id="enable-onu">Habilitar</button>
+                <button id="disable-catv">Deshabilitar CATV</button>
+                <button id="enable-catv">Habilitar CATV</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

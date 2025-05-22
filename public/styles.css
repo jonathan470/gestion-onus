@@ -1,0 +1,116 @@
+/* Fondo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Tarjeta principal */
+.card {
+    background-color: #e0e0e0; /* gris neutro */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 370px;
+    text-align: center;
+}
+
+/* Logo */
+.logo img {
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Título */
+.description-container h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Área de texto */
+.input-container textarea {
+    width: 80%;
+    height: 120px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    background-color: #fff;
+}
+
+/* Botones */
+.bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    width: 140px;
+}
+
+/* Botones rojo */
+#disable-onu, #disable-catv {
+    background-color: #d9534f;
+    color: white;
+}
+#disable-onu:hover, #disable-catv:hover {
+    background-color: #b52b27;
+}
+
+/* Botones verde */
+#enable-onu, #enable-catv {
+    background-color: #5cb85c;
+    color: white;
+}
+#enable-onu:hover, #enable-catv:hover {
+    background-color: #449d44;
+}
+
+/* Alerta personalizada */
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    animation: fadeInOut 4s ease-in-out;
+}
+
+/* Alerta éxito */
+.custom-alert.success {
+    background-color: #6c757d; /* gris oscuro neutro */
+}
+
+/* Alerta error */
+.custom-alert.error {
+    background-color: #dc3545;
+}
+
+/* Animación de aparición/desaparición */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+}
